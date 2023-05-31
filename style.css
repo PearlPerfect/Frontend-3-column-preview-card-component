@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Lexend+Deca:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0, 0%, 95%);
+    margin: 80px auto 10px;
+    padding: 20px;
+}
+
+
+.firstCard{
+    padding: 25px;
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 300px;
+    margin: 20px 0 10px;
+    height: 420px;
+}
+
+.secondCard{
+    padding: 25px;
+    background: hsl(184, 100%, 22%);
+    width: 300px;
+    margin: 20px 0 10px;
+    height: 420px;
+}
+
+.thirdCard{
+    padding: 25px;
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 300px;
+    margin: 20px 0 10px;
+    height: 420px;
+}
+
+h1{
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 35px auto 50px;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button{
+margin: 90px auto 25px;
+padding: 10px;
+cursor: pointer;
+outline: 0;
+border: 1px solid hsl(0, 0%, 95%);
+color: hsl(0, 0%, 95%);
+background: transparent;
+border-radius: 50px;
+width: 150px;
+}
+.attribution {
+    font-size: 15px; 
+    text-align: center;
+    margin-top:15px ;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 375px){
+    body{
+        height: 100vh;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        margin: 0 ;
+    }
+
+    .firstCard{
+        padding: 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 270px;
+        margin:  0;
+        border-bottom-left-radius: 0;
+        width: 270px;
+    }
+    
+    .secondCard{
+        padding: 20px;
+        margin:  0;
+        height: 270px;
+        width: 270px;
+    }
+    
+    .thirdCard{
+        padding: 20;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        margin: 0;
+        height: 270px;
+        width: 270px;
+    }
+    
+    h1{
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Big Shoulders Display', cursive;
+        margin: 10px auto 15px;
+    }
+
+    button{
+        margin: 20px auto 10px;
+        border: 0;
+        background: hsl(0, 0%, 95%);
+        border-radius: 50px;
+        width: 150px;
+        }
+        #first_btn{
+            color: hsl(31, 77%, 52%);
+        }
+        #second_btn{
+            color: hsl(184, 100%, 22%);
+        }
+
+        #third_btn{
+            color: hsl(179, 100%, 13%);
+        }
+}
+
